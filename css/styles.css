@@ -234,6 +234,67 @@
 .about-text p{
     font-size: 30px;
     display: block;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1550px){
+    
+    .card-about{
+        margin: 0 30px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid rgb(216, 125, 7);
+     }
+     
+     .about-img img{
+        padding: 70px;
+     }
+     
+     .about-text {
+        padding: 0 100px 100px 100px;
+        margin-top: 0;
+     }
+}
+
+@media screen and (max-width: 1000px){
+    .card-about{
+        background-image: url(../img/g_7.jpg);
+        background-repeat: no-repeat;
+        background-position: start;
+        background-size: cover;
+        max-width: 1200px;
+    }
+
+    .about-img img{
+        display: none;
+     }
+
+    .about-img {
+        width: 100%;
+        display: inline-block;
+        transform: none;
+    } 
+
+    .about-img h3,h5{
+        text-transform: uppercase;
+        top: 60px;
+    } 
+
+    .about-text {
+        margin-top: 100px;
+    }
+
+    .about-text p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+   
+    .card-about{
+       /* display: none; */
+    }
 }
 
 /* CONHECIMENTOS*/
@@ -355,6 +416,27 @@
     }
 }
 
+@media screen and (max-width: 460px){
+    .section-heading{
+        text-transform: uppercase;
+        font-size: 2em;
+        border-bottom: 5px solid rgb(216, 125, 7);
+        border-radius: 5px;
+        color: rgb(75, 71, 71);
+        letter-spacing: 0.025em;
+    }
+}
+
+@media screen and (max-width: 318px){
+    .section-heading{
+        text-transform: uppercase;
+        font-size: 1em;
+        border-bottom: 5px solid rgb(216, 125, 7);
+        border-radius: 5px;
+        color: rgb(75, 71, 71);
+        letter-spacing: 0.025em;
+    }
+}
 
 /* PROJETOS*/
 
