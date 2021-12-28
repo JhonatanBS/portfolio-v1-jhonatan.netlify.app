@@ -69,8 +69,9 @@
     background: transparent;
     border: none;
     color: white;
+    transition: .8s;
 }
- .bi-list{
+ .bi-list,.bi-x-lg{
     font-size: 50px;
     color: rgb(216, 125, 7)
  }
@@ -290,12 +291,6 @@
     }
 }
 
-@media screen and (max-width: 500px){
-   
-    .card-about{
-       /* display: none; */
-    }
-}
 
 /* CONHECIMENTOS*/
 
@@ -440,6 +435,179 @@
 
 /* PROJETOS*/
 
+.sessao-projetos { 
+    height: 100%;/**/
+    /* background-color: chartreuse; */
+    margin: 50px 0;
+  }
+  
+.sessao-projetos .section-title{
+    text-align: center;
+    display: block;
+    width: 250px;
+    /* background-color: #ff4081; */
+    margin-bottom: 50px;
+}  
+  .projetos {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-areas: 
+    "card-project card-project card-project card-project"
+    "card-project card-project card-project card-project"
+    ;
+    grid-gap: 1%;
+    /* background-color: darkslateblue; */
+    padding: 50px;
+    grid-gap: 100px;
+  }
+
+  .card-project {
+    width: 23rem;
+    height: 32rem;
+    position: relative;
+    /* background-color: deeppink; */
+    
+  }
+  
+  .card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: 1rem;
+    transition: all .5s;
+    cursor: pointer;
+  }
+
+  .card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .card-project:hover .card-img-wrapper img {
+    opacity: 0.5;
+    box-shadow: 0 0 50px var(--color-primary);
+  }
+  
+  .card-info {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+  }
+  
+  .card-info h2 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+  }
+  
+  .card-info h3 {
+    font-family: var(--font-action);
+    font-weight: bolder;
+    color: #ff4081;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-info p {
+    font-family: var(--font-secundary);
+    color: #eee;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background: #6a3093;
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+    background: linear-gradient(to left, #a044ff, #6a3093);
+    font-family: var(--font-action);
+    color: #eee;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .card-info button {
+    width: 8rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .card-project:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+@media screen and (max-width: 1850px){
+    .projetos{
+        grid-template-areas: 
+    "card-project card-project card-project "
+    "card-project card-project card-project "
+    "card-project card-project card-project "
+    ;
+    }
+}
+
+@media screen and (max-width: 1444px){
+    .projetos{
+        grid-template-areas: 
+    "card-project card-project "
+    "card-project card-project "
+    "card-project card-project "
+    "card-project card-project "
+    "card-project card-project "
+    "card-project card-project "
+    ;
+    }
+
+    .sessao-projetos{
+        padding: 0;
+        margin: 0;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 902px){
+    .projetos{
+        grid-template-areas: 
+    "card-project"
+    "card-project"
+    "card-project"
+    "card-project"
+    "card-project"
+    "card-project"
+    "card-project"
+    "card-project"
+    ;
+    }
+
+}   
+
+@media screen and (max-width: 405px){
+    .card-project{
+        width: 15rem;
+        height: 24rem;
+    }
+
+    .card-info {
+        top:1px;
+      }
+      
+      .card-info p {
+        width: 100%;
+        margin-bottom: 1rem;
+      } 
+} 
+
 /* FORMULÁRIO*/
 
 /* FOOTER*/
@@ -519,5 +687,3 @@ footer{
     font-weight: 200;
     color: #111;
 }
-
-

@@ -5,12 +5,13 @@ function Menu(config){
     
     this.maxWidth = config.widthEnabled || false;
     
+    this.heading = document.querySelector(".bi-list");
+
     var _opened = false;
     var _this = this;
     
     this.btn.removeAttribute('style')
-    //closeMenu()
-    
+   
     if(this.maxWidth){
         window.addEventListener('resize', e => {
             if(window.innerWidth > _this.maxWidth){
@@ -30,9 +31,13 @@ function Menu(config){
     
     function openOrClose(){
         if(!_opened){
-            openMenu()
+            openMenu();
+            _this.heading.classList.remove("bi-list");
+            _this.heading.classList.add("bi-x-lg");
         } else {
-            closeMenu()
+            closeMenu();
+            _this.heading.classList.remove("bi-x-lg");
+            _this.heading.classList.add("bi-list");
         }
     }
     
