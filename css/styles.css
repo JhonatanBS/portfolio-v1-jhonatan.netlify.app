@@ -500,11 +500,12 @@
     padding: 2rem;
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
     transition: all 0.3s;
+    text-align: center;
   }
   
   .card-info h2 {
     font-family: var(--font-primary);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #eee;
   }
@@ -512,22 +513,28 @@
   .card-info h3 {
     font-family: var(--font-action);
     font-weight: bolder;
-    color: #ff4081;
-    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
   }
   
+.projeto-p{
+    text-align: justify;
+}
+
   .card-info p {
     font-family: var(--font-secundary);
     color: #eee;
     font-weight: 400;
-    width: 80%;
+    width: 100%;
     margin-bottom: 2rem;
+    text-align: justify;
   }
   
   .btn {
-    background: #6a3093;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-    background: linear-gradient(to left, #a044ff, #6a3093);
+    background: var(--color-primary);
+    background: -webkit-linear-gradient(to right, #db9429, #b96708);
+    background: linear-gradient(to left, #db9429, #b96708);
     font-family: var(--font-action);
     color: #eee;
     border-radius: 0.5rem;
@@ -607,6 +614,78 @@
         margin-bottom: 1rem;
       } 
 } 
+
+/* EXPERIÊNCAS PROFISSIONAIS*/
+
+.experience{
+    height: 100vh;
+}
+
+.experience-title{
+    display: flex;
+    justify-content: center;
+}
+
+.experience-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.experience-img img{
+    height: 1000px;
+    width: 1000px;
+}
+
+@media screen and (max-width: 1334px){
+    .experience-img img{
+        height: 800px;
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .experience{
+        height: 100%;
+        margin-bottom: 100px;
+    }
+
+    .experience-img img{
+        height: 700px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .experience-title{
+        font-size: 10px;
+    }
+
+    .experience-img img{
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .experience-img img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 540px){
+
+    .experience-title{
+        font-size: 9px;
+    }
+
+    .experience-img img{
+        height: 300px;
+        width: 300px;
+    }
+}
 
 /* FORMULÁRIO*/
 
