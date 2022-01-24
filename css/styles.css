@@ -98,22 +98,18 @@
 .titulo{
     display: flex; 
     font-weight: 600;
-    font-size: 120px;
+    font-size: 70px;
+    color: var(--color-primary);
 }
 
-.titulo div:nth-child(1){
-color: var(--color-primary);
-}
-
-.titulo div:nth-child(2){
-    color: #ffffff;
-    margin-left: 25px;
+.titulo span{
+color: #FFFFFF;
 }
 
 .sub-titulo{
     color: var(--color-primary);
     font-size: 3rem;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /* ABOUT ou SOBRE*/

@@ -10,6 +10,16 @@
     }
 }
 
+@media screen and (max-width: 1800px){
+    .titulo{
+        font-size: 60px;
+    }
+
+    .sub-titulo{
+        font-size: 2.5rem;
+    }
+}
+
 @media screen and (max-width: 1600px){
     .circulo{
         position: absolute;
@@ -20,11 +30,11 @@
     }
 
     .titulo{
-        font-size: 100px;
+        font-size: 50px;
     }
 
     .sub-titulo{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -32,6 +42,11 @@
     .apresentacao{
         background-image: url(../img/projetoMobile.png);
         background-position: center;
+    }
+    
+    .circulo{
+        height: 250px;
+        width: 250px;
     }
 
     .botao-menu{
@@ -67,61 +82,95 @@
     }
 
     .titulo{
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .sub-titulo{
-        font-size: 2rem;
+        font-size: 1.7rem;
+        margin-top: 70px;
     }
 }
 
 @media screen and (max-width:1100px){
      .titulo{
-         font-size: 50px;
+         font-size: 25px;
      }
 
      .sub-titulo{
-         font-size: 1.5rem;
+         font-size: 1.2rem;
      }
 }
 
 @media screen and (max-width:750px){
-
-    .container{
-      margin-top: 250px;
-    }
     
     .circulo{
-      top: 300px;
+      top: 170px;
       left: 10px;
+      height: 200px;
+      width: 200px;
     }
 
     .titulo{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .sub-titulo{
         font-size: 1.0rem;
+    }
+}
+
+@media screen and (max-width:580px){
+
+    .circulo{
+      top: 160px;
+      left: 10px;
+      height: 200px;
+      width:200px;
+    }
+
+    .titulo{
+        font-size: 18px;
+    }
+
+    .sub-titulo{
+        font-size: 1.0rem;
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width:500px){
 
-    
     .circulo{
-      top: 300px;
+      top: 160px;
       left: 10px;
-      height: 300px;
-      width:300px;
+      height: 200px;
+      width:200px;
     }
 
     .titulo{
-        font-size: 30px;
+        font-size: 15px;
     }
 
     .sub-titulo{
-        font-size: 1.0rem;
+        font-size: .8rem;
     }
 }
 
+@media screen and (max-width:400px){
+
+    .circulo{
+      top: 160px;
+      left: 10px;
+      height: 180px;
+      width:180px;
+    }
+
+    .titulo{
+        font-size: 10px;
+    }
+
+    .sub-titulo{
+        font-size: 0.55rem;
+    }
+}
 /* SECTION */
