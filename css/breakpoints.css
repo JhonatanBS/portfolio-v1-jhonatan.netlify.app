@@ -30,23 +30,24 @@
     }
 
     .titulo{
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .sub-titulo{
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 }
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1450px){
+    
     .apresentacao{
         background-image: url(../img/projetoMobile.png);
         background-position: center;
     }
     
     .circulo{
-        height: 250px;
-        width: 250px;
+        height: 35vh;
+        width: 35vh;
     }
 
     .botao-menu{
@@ -82,32 +83,100 @@
     }
 
     .titulo{
-        font-size: 40px;
+        font-size: 44px;
     }
 
     .sub-titulo{
-        font-size: 1.7rem;
+        font-size: 2rem;
         margin-top: 70px;
     }
 }
 
+@media screen and (max-width:1250px){
+    .titulo{
+        font-size: 40px;
+    }
+
+    .sub-titulo{
+        font-size: 1.9rem;
+    }
+}
+
 @media screen and (max-width:1100px){
+
+    .circulo{
+        height: 30vh;
+        width: 30vh;
+    }
+
      .titulo{
-         font-size: 25px;
+         font-size: 35px;
      }
 
      .sub-titulo{
-         font-size: 1.2rem;
+         font-size: 1.7rem;
      }
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:1000px){
+
+    .circulo{
+        height: 28vh;
+        width: 28vh;
+    }
+
+     .titulo{
+         font-size: 31px;
+     }
+
+     .sub-titulo{
+         font-size: 1.4rem;
+     }
+}
+
+@media screen and (max-width:850px){
     
     .circulo{
-      top: 170px;
+      top: 250px;
       left: 10px;
-      height: 200px;
-      width: 200px;
+      height: 25vh;
+      width: 25vh;
+    }
+
+    .titulo{
+        font-size: 27px;
+    }
+
+    .sub-titulo{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:850px){
+    
+    .circulo{
+      top: 250px;
+      left: 10px;
+      height: 25vh;
+      width: 25vh;
+    }
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    .sub-titulo{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    .circulo{
+      top: 250px;
+      left: 10px;
+      height: 25vh;
+      width: 25vh;
     }
 
     .titulo{
@@ -115,17 +184,16 @@
     }
 
     .sub-titulo{
-        font-size: 1.0rem;
+        font-size: 1.1rem;
+        margin-top: 30px;
     }
 }
 
-@media screen and (max-width:580px){
+@media screen and (max-width:550px){
 
     .circulo{
-      top: 160px;
+      top: 250px;
       left: 10px;
-      height: 200px;
-      width:200px;
     }
 
     .titulo{
@@ -133,45 +201,56 @@
     }
 
     .sub-titulo{
-        font-size: 1.0rem;
-        margin-top: 30px;
+        font-size: .9rem;
     }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:470px){
 
     .circulo{
-      top: 160px;
-      left: 10px;
-      height: 200px;
-      width:200px;
+      height: 20vh;
+      width: 20vh;
     }
 
     .titulo{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .sub-titulo{
-        font-size: .8rem;
+        font-size: 0.85rem;
     }
 }
 
 @media screen and (max-width:400px){
 
     .circulo{
-      top: 160px;
-      left: 10px;
-      height: 180px;
-      width:180px;
+      height: 25vh;
+      width: 25vh;
     }
 
     .titulo{
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .sub-titulo{
-        font-size: 0.55rem;
+        font-size: 0.70rem;
     }
+}
+
+@media screen and (max-height:900px){
+
+    .circulo{
+      top: 170px;
+    }
+
+}
+
+@media screen and (max-height:700px){
+
+    .circulo{
+      top: 130px;
+    }
+
 }
 /* ABOUT */
 
