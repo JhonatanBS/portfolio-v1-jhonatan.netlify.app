@@ -287,15 +287,7 @@
 @media screen and (max-width: 1750px){
 
     .card-about{
-        background: linear-gradient(130.2deg, #242424 41.84%, #FFFFFF 41.9%);
-    }
-
-    .image{
-        height: 37vh;
-        width: 37vh;
-        
-        right: 320px;
-        bottom: 350px;
+        background: linear-gradient(140.2deg, #242424 41.84%, #FFFFFF 41.9%);
     }
 
     .profile h4{
@@ -310,14 +302,12 @@
 @media screen and (max-width: 1600px){
 
     .card-about{
-        background: linear-gradient(128.2deg, #242424 41.84%, #FFFFFF 41.9%);
+        background: linear-gradient(135.2deg, #242424 41.84%, #FFFFFF 41.9%);
     }
 
     .image{
         height: 34vh;
         width: 34vh;
-        right: 250px;
-        bottom: 350px;
     }
 
     .profile h4{
@@ -338,8 +328,6 @@
     .image{
         height: 33vh;
         width: 33vh;
-        right: 250px;
-        bottom: 350px;
     }
 
     .profile h4{
@@ -360,8 +348,6 @@
     .image{
         height: 30vh;
         width: 30vh;
-        right: 210px;
-        bottom: 400px;
     }
 
     .profile h4{
@@ -379,11 +365,6 @@
         background: linear-gradient(120.2deg, #242424 41.84%, #FFFFFF 41.9%);
     }
 
-    .image{
-        right: 150px;
-        bottom: 400px;
-    }
-
     .profile h4{
         font-size: 31px;
     }
@@ -396,37 +377,37 @@
 @media screen and (max-width: 1100px){
 
     .card-about{
-        background: linear-gradient(145.2deg, #242424 41.84%, #FFFFFF 41.9%);
-        display: grid;
-        
+        background: linear-gradient(165.2deg, #242424 41.84%, #FFFFFF 41.9%);
+        flex-direction: column;
     }
     .about-img{
         width: 100%;
-        align-items: flex-end;
-    }
-
-    .image{
-        position: static;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
     }
 
     .about-profile{
         width: 100%;
         height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 3vh 3vh;
     }
     
-    .profile{
+    .about-profile .profile{
         width: 100%;
+        margin: 0;
     }
 
     .profile h4{
-        font-size: 40px;
-        margin: 0;
+        font-size: 5vh;
         text-align: center;
     }
 
     .profile h5{
-        font-size: 28px;
-        text-align: center;
+        font-size: 3vh;
+        text-align: justify;
 
     }
 }
@@ -434,38 +415,55 @@
 @media screen and (max-width: 780px){
 
     .card-about{
-        background: linear-gradient(170.2deg, #242424 41.84%, #FFFFFF 41.9%);
-        display: flex;
-        flex-direction: column;
+        background: linear-gradient(170.2deg, #242424 41.9%, #FFFFFF 41.9%);
         
-    }
-    .about-img{
-        width: 100%;
-        align-items: flex-end;
-    }
-
-    .image{
-        position: static;
-    }
-
-    .about-profile{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .profile{
-        width: 100%;
     }
 
     .profile h4{
-        font-size: 40px;
+        font-size: 4vh;
         margin: 0;
         text-align: center;
     }
 
     .profile h5{
-        font-size: 28px;
+        font-size: 2.5vh;
         text-align: center;
 
+    }
+}
+
+@media screen and (max-width: 550px){
+
+    .about-img .image{
+        height: 25vh;
+        width: 25vh;
+    }
+
+    .profile h4{
+        font-size: 3vh;
+        margin: 0;
+        text-align: center;
+    }
+
+    .profile h5{
+        font-size: 2vh;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .about-img .image{
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .profile h4{
+        font-size: 2.5vh;
+    }
+
+    .profile h5{
+        font-size: 1.8vh;
     }
 }

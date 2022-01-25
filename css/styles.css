@@ -143,20 +143,17 @@ color: #FFFFFF;
 
 .about-img{
     height: 100%;
-    width: 50%;
+    width: 40%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10vh;
 }
 
 .image{
     height: 40vh;
     width: 40vh;
     border-radius: 50%;
-    position: absolute;
-    right: 350px;
-    bottom: 300px;
 }
 
 .image img{
@@ -167,9 +164,10 @@ color: #FFFFFF;
 
 .about-profile{
     height: 100%;
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -183,6 +181,7 @@ color: #FFFFFF;
     font-size: 50px;
     color: #000000;
     margin-top: 50px;
+    text-align: center;
 }
 
 .profile h4 span{
