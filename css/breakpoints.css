@@ -71,28 +71,45 @@
 
     .menu{
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
-        top: 180px;
+        top: 15vh;
         right: 0;
-        background-color: #F58220;
+        background-color: #242424;
         height: 0;
         transition: .6s;
-        z-index: 100;
         visibility: hidden;
         overflow-y: hidden;
     }
 
     .menu.ative {
-        height: calc(100vh - 180px);
+        height: calc(100vh - 15vh);
         visibility: visible;
         overflow-y: auto;
     }
 
+    .menu li{
+        text-align: center;
+        border-bottom: 1px dotted rgba(0, 0, 0, 0.8);
+        transition: all .5s;
+    }
+
+    .menu li:hover{
+        background: var(--color-primary);
+        cursor: pointer;
+    }
+
     .menu a{
-        padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom: 2px solid rgba(0,0,0, .5);
+        font-size: 4vh;
+        font-weight: bold;
+        display: block;
+        padding: 5vh 0;
+    }
+     
+    .menu a:hover{
+        color: #FFFFFF;
+        border: none;
     }
 
     .titulo{
